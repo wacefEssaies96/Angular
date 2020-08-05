@@ -1,0 +1,5 @@
+
+<h3>Frais de Livraison</h3>
+<div class="shipping-item" *ngFor="let livraison of fraisLivraison | async" >
+    <span>{{ livraison.prix  | currency : 'TND'}}</span>
+</div>

@@ -1,0 +1,6 @@
+<h2>Nom Panier</h2>
+
+<div class="cart-item" *ngFor="let item of achat">
+    <span>{{ item.nomProduit }} </span>
+    <span>{{ item.prix  | currency : 'TND'}}</span>
+</div>

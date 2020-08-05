@@ -1,0 +1,11 @@
+<h2>Détails sur le produit <strong>{{ produit.nomProduit }}</strong> </h2>
+
+<div>
+    <h3><strong class="small">Nom du produit : </strong> {{ produit.nomProduit }} </h3>
+    <h4><strong class="small">Prix : </strong> {{ produit.prix | currency:'TND ' }} </h4>
+    <p><strong>Déscription : </strong> {{ produit.description }} </p>
+
+    <button
+        class="btn btn-outline-warning"
+        (click)="acheterProduit(produit)">Acheter</button>
+</div>

@@ -1,0 +1,29 @@
+<h2>Nos Produits</h2>
+
+<div class="jumbotron" *ngFor="let produit of produits; index as produitId">
+    <h3>
+        <a [title]="'Plus de détails sur ' + produit.nomProduit" [routerLink]="['/produits', produitId]">
+            {{ produit.nomProduit }}
+        </a>
+    </h3>
+    <p *ngIf="produit.description">
+        Description: {{ produit.description }}
+    </p>
+  
+    <button (click)="share()">
+        Partager
+    </button>
+    &nbsp;
+    <app-alertes-produit
+        [produit]="produit"
+        (alerte)="onNotify()">
+    </app-alertes-produit>
+    &nbsp;
+    <button class="btn btn-warning" (click)=acheterProduit(produit)>Acheter</button>
+</div>
+
+<!-- 
+Copyright Google LLC. All Rights Reserved.
+Use of this source code is governed by an MIT-style license that
+can be found in the LICENSE file at http://angular.io/license
+-->

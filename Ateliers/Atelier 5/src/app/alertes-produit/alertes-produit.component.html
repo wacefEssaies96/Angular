@@ -1,0 +1,6 @@
+<button
+    *ngIf="produit.prix > 3000"
+    class="btn btn-outline-success"
+    (click)="alerte.emit()">
+    M'avertir
+</button>

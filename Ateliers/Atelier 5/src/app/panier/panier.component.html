@@ -1,0 +1,26 @@
+<h2>Mon Panier</h2>
+
+<p>
+    <a routerLink="/livraison">Frais de livraison</a>
+</p>
+
+<div class="cart-item" *ngFor="let item of achats">
+    
+    <span> {{ item.nomProduit }} </span>
+    <span> {{ item.prix | currency: ' TND ' }} </span>
+</div>
+    {{Somme()}}
+<p class="text-success">Somme : {{somme}} </p> 
+
+<form [formGroup]="verifierForm" (ngSubmit)="onSubmit(verifierForm.value)">
+       
+        <label>Nom : </label>
+        <input type="text" formControlName="nom">
+  
+        <label>Adresse : </label>
+        <input type="adresse" formControlName="adresse">
+   
+        <button type="submit" (click>Valider</button>
+        
+</form>
+

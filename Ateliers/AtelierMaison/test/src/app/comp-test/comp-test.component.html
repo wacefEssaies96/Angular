@@ -1,0 +1,9 @@
+<div class="jumbotron"></div>
+<div class="container">
+    <h3 class="text-info">Liste : </h3>
+    <div *ngFor="let ll of l">
+        <p>{{ ll.nom }}</p>
+        <app-buttonng (click)="onNotify()"></app-button>
+    </div>
+    <button (click) = "click()">click me</button>
+</div>

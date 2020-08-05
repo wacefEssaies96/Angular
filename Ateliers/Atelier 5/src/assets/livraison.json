@@ -1,0 +1,14 @@
+[
+    {
+      "type": "Jour-même",
+      "prix": 25
+    },
+    {
+      "type": "2-jours",
+      "prix": 12
+    },
+    {
+      "type": "Rapid-Poste",
+      "prix": 5
+    }
+  ]
